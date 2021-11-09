@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity game is
     port(
         -- up, down, left, right, start, sel: in std_logic; -- the control signals
-        clk50MHZ: in std_logic; -- the input clock signal
+        MAX10_CLK1_50: in std_logic; -- the input clock signal
         -- r, g, b: out std_logic_vector(3 downto 0); -- vga output signals
         -- h_sync, vsync: out std_logic
         KEY : in std_logic_vector(1 downto 0);
@@ -30,6 +30,7 @@ architecture test of game is
     type cordinate is array (0 to 1) of integer range 0 to 49;
     --------------------------------------------------------
     constant start_disp: std_logic_vector(41 downto 0) := "1111111" & "0100100" & "1110000" & "0001000" & "1111010" &  "1110000" ;
+    constant play_disp : std_logic_vector(41 downto 0) := "1111111" & "1111111" & "0011000" & "1110001" & "0001000" &  "1000100" ;
     --------------------------------------------------------
     procedure disp_state(
         signal my_state : in state;
@@ -38,6 +39,8 @@ architecture test of game is
         begin
             if(my_state = start) then
                 out_put <= start_disp;
+            elsif(my_state = play) then 
+                out_put <= play_disp;
             else out_put <= "111111111111111111111111111111111111111111";
             end if;
     end procedure;
@@ -50,7 +53,7 @@ architecture test of game is
 
     begin
     
-    normal_time : clock port map(clk50MHZ, norm_clock);
+    normal_time : clock port map(MAX10_CLK1_50, norm_clock);
 
     disp_state(my_state, hex_out);
 
@@ -68,6 +71,9 @@ architecture test of game is
                 if(b = '1') then
                     my_state <= play;
                     LEDR(0) <= '1';
+                else 
+                    my_state <= start;
+                    LEDR(0) <= '0';
                 end if;
             end if;
     end process;
