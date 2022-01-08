@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'disp_clk|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -18.183
+TNS   : -434.665
+
+Type  : Slow 1200mV 85C Model Setup 'game_clk:norm_clk|out_clk'
+Slack : -3.904
+TNS   : -303.930
+
+Type  : Slow 1200mV 85C Model Setup 'clk50MHz'
+Slack : 5.529
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'disp_clk|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.395
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'game_clk:norm_clk|out_clk'
+Slack : 0.621
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk50MHz'
+Slack : 0.638
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'game_clk:norm_clk|out_clk'
+Slack : -3.166
+TNS   : -292.416
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk50MHz'
+Slack : 4.650
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'disp_clk|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 7.370
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'disp_clk|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -16.332
+TNS   : -390.528
+
+Type  : Slow 1200mV 0C Model Setup 'game_clk:norm_clk|out_clk'
+Slack : -3.468
+TNS   : -264.660
+
+Type  : Slow 1200mV 0C Model Setup 'clk50MHz'
+Slack : 5.837
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'disp_clk|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.317
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'game_clk:norm_clk|out_clk'
+Slack : 0.574
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk50MHz'
+Slack : 0.590
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'game_clk:norm_clk|out_clk'
+Slack : -3.166
+TNS   : -292.416
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk50MHz'
+Slack : 4.656
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'disp_clk|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 7.379
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'disp_clk|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -7.790
+TNS   : -186.050
+
+Type  : Fast 1200mV 0C Model Setup 'game_clk:norm_clk|out_clk'
+Slack : -0.986
+TNS   : -51.405
+
+Type  : Fast 1200mV 0C Model Setup 'clk50MHz'
+Slack : 8.075
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'disp_clk|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.198
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'game_clk:norm_clk|out_clk'
+Slack : 0.238
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk50MHz'
+Slack : 0.245
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'game_clk:norm_clk|out_clk'
+Slack : -1.000
+TNS   : -128.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk50MHz'
+Slack : 4.332
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'disp_clk|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 7.405
+TNS   : 0.000
+
+------------------------------------------------------------

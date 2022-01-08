@@ -1,0 +1,18 @@
+Fitter Status : Successful - Sat Jan 08 17:44:00 2022
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : mr_balk
+Top-level Entity Name : mr_balk
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 678 / 49,760 ( 1 % )
+    Total combinational functions : 677 / 49,760 ( 1 % )
+    Dedicated logic registers : 187 / 49,760 ( < 1 % )
+Total registers : 187
+Total pins : 25 / 360 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 49,152 / 1,677,312 ( 3 % )
+Embedded Multiplier 9-bit elements : 8 / 288 ( 3 % )
+Total PLLs : 1 / 4 ( 25 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )
