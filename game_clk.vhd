@@ -19,7 +19,7 @@ architecture test of game_clk is
         clock_divider : process(clk)
         begin
             if(rising_edge(clk)) then
-                if (number = 50000000) then
+                if (number = 25000000) then
                     number <= 0;
                     out_clk <= '1';
                 else number <= number + 1; out_clk <= '0';
