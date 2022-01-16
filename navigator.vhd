@@ -74,7 +74,7 @@ architecture test of navigator is
 
 
                         --whwn you get out of the maze------------------
-                        if(x_var = -5) and (y_var = 2) then
+                        if(x_var = -6) and (y_var = 1) then
                             x_var := 0;
                             y_var := 0;
                         end if;

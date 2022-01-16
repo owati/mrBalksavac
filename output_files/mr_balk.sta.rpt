@@ -1,5 +1,5 @@
 Timing Analyzer report for mr_balk
-Mon Jan 10 00:02:16 2022
+Sat Jan 15 21:58:10 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -92,12 +92,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.67        ;
+; Average used               ; 1.65        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  67.3%      ;
+;     Processor 2            ;  64.8%      ;
 +----------------------------+-------------+
 
 
@@ -117,9 +117,9 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                           ; Note ;
 +------------+-----------------+------------------------------------------------------+------+
-; 2.96 MHz   ; 2.96 MHz        ; game_clk:norm_clk|out_clk                            ;      ;
-; 79.69 MHz  ; 79.69 MHz       ; disp_clk|altpll_component|auto_generated|pll1|clk[0] ;      ;
-; 224.47 MHz ; 224.47 MHz      ; clk50MHz                                             ;      ;
+; 2.98 MHz   ; 2.98 MHz        ; game_clk:norm_clk|out_clk                            ;      ;
+; 84.75 MHz  ; 84.75 MHz       ; disp_clk|altpll_component|auto_generated|pll1|clk[0] ;      ;
+; 230.84 MHz ; 230.84 MHz      ; clk50MHz                                             ;      ;
 +------------+-----------------+------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -129,9 +129,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------+----------+---------------+
 ; Clock                                                ; Slack    ; End Point TNS ;
 +------------------------------------------------------+----------+---------------+
-; game_clk:norm_clk|out_clk                            ; -337.118 ; -42591.295    ;
-; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; -21.761  ; -637.369      ;
-; clk50MHz                                             ; 5.545    ; 0.000         ;
+; game_clk:norm_clk|out_clk                            ; -334.610 ; -42363.468    ;
+; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; -20.340  ; -603.418      ;
+; clk50MHz                                             ; 5.668    ; 0.000         ;
 +------------------------------------------------------+----------+---------------+
 
 
@@ -140,9 +140,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------+-------+---------------+
 ; Clock                                                ; Slack ; End Point TNS ;
 +------------------------------------------------------+-------+---------------+
-; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 0.308 ; 0.000         ;
-; game_clk:norm_clk|out_clk                            ; 0.323 ; 0.000         ;
-; clk50MHz                                             ; 0.645 ; 0.000         ;
+; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 0.244 ; 0.000         ;
+; game_clk:norm_clk|out_clk                            ; 0.321 ; 0.000         ;
+; clk50MHz                                             ; 0.646 ; 0.000         ;
 +------------------------------------------------------+-------+---------------+
 
 
@@ -164,8 +164,8 @@ No paths to report.
 ; Clock                                                ; Slack  ; End Point TNS ;
 +------------------------------------------------------+--------+---------------+
 ; game_clk:norm_clk|out_clk                            ; -3.166 ; -295.222      ;
-; clk50MHz                                             ; 4.637  ; 0.000         ;
-; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 7.361  ; 0.000         ;
+; clk50MHz                                             ; 4.634  ; 0.000         ;
+; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 7.356  ; 0.000         ;
 +------------------------------------------------------+--------+---------------+
 
 
@@ -175,15 +175,15 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+--------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary                                                          ;
-+------------+-----------------+------------------------------------------------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name                                           ; Note ;
-+------------+-----------------+------------------------------------------------------+------+
-; 3.2 MHz    ; 3.2 MHz         ; game_clk:norm_clk|out_clk                            ;      ;
-; 85.81 MHz  ; 85.81 MHz       ; disp_clk|altpll_component|auto_generated|pll1|clk[0] ;      ;
-; 247.46 MHz ; 247.46 MHz      ; clk50MHz                                             ;      ;
-+------------+-----------------+------------------------------------------------------+------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                                                                   ;
++------------+-----------------+------------------------------------------------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name                                           ; Note                                                          ;
++------------+-----------------+------------------------------------------------------+---------------------------------------------------------------+
+; 3.22 MHz   ; 3.22 MHz        ; game_clk:norm_clk|out_clk                            ;                                                               ;
+; 92.4 MHz   ; 92.4 MHz        ; disp_clk|altpll_component|auto_generated|pll1|clk[0] ;                                                               ;
+; 254.97 MHz ; 250.0 MHz       ; clk50MHz                                             ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------------------------------------------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -192,9 +192,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------+----------+---------------+
 ; Clock                                                ; Slack    ; End Point TNS ;
 +------------------------------------------------------+----------+---------------+
-; game_clk:norm_clk|out_clk                            ; -311.827 ; -39398.537    ;
-; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; -19.629  ; -571.995      ;
-; clk50MHz                                             ; 5.959    ; 0.000         ;
+; game_clk:norm_clk|out_clk                            ; -309.755 ; -39218.442    ;
+; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; -18.314  ; -541.419      ;
+; clk50MHz                                             ; 6.078    ; 0.000         ;
 +------------------------------------------------------+----------+---------------+
 
 
@@ -203,8 +203,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------+-------+---------------+
 ; Clock                                                ; Slack ; End Point TNS ;
 +------------------------------------------------------+-------+---------------+
-; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 0.264 ; 0.000         ;
-; game_clk:norm_clk|out_clk                            ; 0.290 ; 0.000         ;
+; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 0.202 ; 0.000         ;
+; game_clk:norm_clk|out_clk                            ; 0.288 ; 0.000         ;
 ; clk50MHz                                             ; 0.597 ; 0.000         ;
 +------------------------------------------------------+-------+---------------+
 
@@ -227,8 +227,8 @@ No paths to report.
 ; Clock                                                ; Slack  ; End Point TNS ;
 +------------------------------------------------------+--------+---------------+
 ; game_clk:norm_clk|out_clk                            ; -3.166 ; -295.222      ;
-; clk50MHz                                             ; 4.647  ; 0.000         ;
-; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 7.379  ; 0.000         ;
+; clk50MHz                                             ; 4.645  ; 0.000         ;
+; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 7.376  ; 0.000         ;
 +------------------------------------------------------+--------+---------------+
 
 
@@ -243,9 +243,9 @@ No synchronizer chains to report.
 +------------------------------------------------------+----------+---------------+
 ; Clock                                                ; Slack    ; End Point TNS ;
 +------------------------------------------------------+----------+---------------+
-; game_clk:norm_clk|out_clk                            ; -151.672 ; -19158.797    ;
-; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; -9.522   ; -283.168      ;
-; clk50MHz                                             ; 7.982    ; 0.000         ;
+; game_clk:norm_clk|out_clk                            ; -150.411 ; -19045.599    ;
+; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; -8.757   ; -265.180      ;
+; clk50MHz                                             ; 8.215    ; 0.000         ;
 +------------------------------------------------------+----------+---------------+
 
 
@@ -254,8 +254,8 @@ No synchronizer chains to report.
 +------------------------------------------------------+-------+---------------+
 ; Clock                                                ; Slack ; End Point TNS ;
 +------------------------------------------------------+-------+---------------+
+; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 0.109 ; 0.000         ;
 ; game_clk:norm_clk|out_clk                            ; 0.140 ; 0.000         ;
-; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 0.142 ; 0.000         ;
 ; clk50MHz                                             ; 0.250 ; 0.000         ;
 +------------------------------------------------------+-------+---------------+
 
@@ -278,8 +278,8 @@ No paths to report.
 ; Clock                                                ; Slack  ; End Point TNS ;
 +------------------------------------------------------+--------+---------------+
 ; game_clk:norm_clk|out_clk                            ; -1.000 ; -130.000      ;
-; clk50MHz                                             ; 4.330  ; 0.000         ;
-; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 7.402  ; 0.000         ;
+; clk50MHz                                             ; 4.327  ; 0.000         ;
+; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 7.403  ; 0.000         ;
 +------------------------------------------------------+--------+---------------+
 
 
@@ -294,14 +294,14 @@ No synchronizer chains to report.
 +-------------------------------------------------------+------------+-------+----------+---------+---------------------+
 ; Clock                                                 ; Setup      ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +-------------------------------------------------------+------------+-------+----------+---------+---------------------+
-; Worst-case Slack                                      ; -337.118   ; 0.140 ; N/A      ; N/A     ; -3.166              ;
-;  clk50MHz                                             ; 5.545      ; 0.250 ; N/A      ; N/A     ; 4.330               ;
-;  disp_clk|altpll_component|auto_generated|pll1|clk[0] ; -21.761    ; 0.142 ; N/A      ; N/A     ; 7.361               ;
-;  game_clk:norm_clk|out_clk                            ; -337.118   ; 0.140 ; N/A      ; N/A     ; -3.166              ;
-; Design-wide TNS                                       ; -43228.664 ; 0.0   ; 0.0      ; 0.0     ; -295.222            ;
+; Worst-case Slack                                      ; -334.610   ; 0.109 ; N/A      ; N/A     ; -3.166              ;
+;  clk50MHz                                             ; 5.668      ; 0.250 ; N/A      ; N/A     ; 4.327               ;
+;  disp_clk|altpll_component|auto_generated|pll1|clk[0] ; -20.340    ; 0.109 ; N/A      ; N/A     ; 7.356               ;
+;  game_clk:norm_clk|out_clk                            ; -334.610   ; 0.140 ; N/A      ; N/A     ; -3.166              ;
+; Design-wide TNS                                       ; -42966.886 ; 0.0   ; 0.0      ; 0.0     ; -295.222            ;
 ;  clk50MHz                                             ; 0.000      ; 0.000 ; N/A      ; N/A     ; 0.000               ;
-;  disp_clk|altpll_component|auto_generated|pll1|clk[0] ; -637.369   ; 0.000 ; N/A      ; N/A     ; 0.000               ;
-;  game_clk:norm_clk|out_clk                            ; -42591.295 ; 0.000 ; N/A      ; N/A     ; -295.222            ;
+;  disp_clk|altpll_component|auto_generated|pll1|clk[0] ; -603.418   ; 0.000 ; N/A      ; N/A     ; 0.000               ;
+;  game_clk:norm_clk|out_clk                            ; -42363.468 ; 0.000 ; N/A      ; N/A     ; -295.222            ;
 +-------------------------------------------------------+------------+-------+----------+---------+---------------------+
 
 
@@ -430,7 +430,7 @@ No synchronizer chains to report.
 +------------------------------------------------------+------------------------------------------------------+--------------+----------+----------+----------+
 ; clk50MHz                                             ; clk50MHz                                             ; 976          ; 0        ; 0        ; 0        ;
 ; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 46061        ; 0        ; 0        ; 0        ;
-; game_clk:norm_clk|out_clk                            ; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 58672217     ; 0        ; 0        ; 0        ;
+; game_clk:norm_clk|out_clk                            ; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 58672216     ; 0        ; 0        ; 0        ;
 ; game_clk:norm_clk|out_clk                            ; game_clk:norm_clk|out_clk                            ; > 2147483647 ; 0        ; 0        ; 0        ;
 +------------------------------------------------------+------------------------------------------------------+--------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
@@ -443,7 +443,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------------------------------------------------+------------------------------------------------------+--------------+----------+----------+----------+
 ; clk50MHz                                             ; clk50MHz                                             ; 976          ; 0        ; 0        ; 0        ;
 ; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 46061        ; 0        ; 0        ; 0        ;
-; game_clk:norm_clk|out_clk                            ; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 58672217     ; 0        ; 0        ; 0        ;
+; game_clk:norm_clk|out_clk                            ; disp_clk|altpll_component|auto_generated|pll1|clk[0] ; 58672216     ; 0        ; 0        ; 0        ;
 ; game_clk:norm_clk|out_clk                            ; game_clk:norm_clk|out_clk                            ; > 2147483647 ; 0        ; 0        ; 0        ;
 +------------------------------------------------------+------------------------------------------------------+--------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
@@ -562,7 +562,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Jan 10 00:01:59 2022
+    Info: Processing started: Sat Jan 15 21:57:51 2022
 Info: Command: quartus_sta mr_balk -c mr_balk
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -583,42 +583,42 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -337.118
+Info (332146): Worst-case setup slack is -334.610
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):  -337.118          -42591.295 game_clk:norm_clk|out_clk 
-    Info (332119):   -21.761            -637.369 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):     5.545               0.000 clk50MHz 
-Info (332146): Worst-case hold slack is 0.308
+    Info (332119):  -334.610          -42363.468 game_clk:norm_clk|out_clk 
+    Info (332119):   -20.340            -603.418 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     5.668               0.000 clk50MHz 
+Info (332146): Worst-case hold slack is 0.244
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.308               0.000 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):     0.323               0.000 game_clk:norm_clk|out_clk 
-    Info (332119):     0.645               0.000 clk50MHz 
+    Info (332119):     0.244               0.000 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     0.321               0.000 game_clk:norm_clk|out_clk 
+    Info (332119):     0.646               0.000 clk50MHz 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.166
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.166            -295.222 game_clk:norm_clk|out_clk 
-    Info (332119):     4.637               0.000 clk50MHz 
-    Info (332119):     7.361               0.000 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     4.634               0.000 clk50MHz 
+    Info (332119):     7.356               0.000 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -311.827
+Info (332146): Worst-case setup slack is -309.755
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):  -311.827          -39398.537 game_clk:norm_clk|out_clk 
-    Info (332119):   -19.629            -571.995 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):     5.959               0.000 clk50MHz 
-Info (332146): Worst-case hold slack is 0.264
+    Info (332119):  -309.755          -39218.442 game_clk:norm_clk|out_clk 
+    Info (332119):   -18.314            -541.419 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     6.078               0.000 clk50MHz 
+Info (332146): Worst-case hold slack is 0.202
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.264               0.000 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):     0.290               0.000 game_clk:norm_clk|out_clk 
+    Info (332119):     0.202               0.000 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     0.288               0.000 game_clk:norm_clk|out_clk 
     Info (332119):     0.597               0.000 clk50MHz 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
@@ -626,22 +626,22 @@ Info (332146): Worst-case minimum pulse width slack is -3.166
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.166            -295.222 game_clk:norm_clk|out_clk 
-    Info (332119):     4.647               0.000 clk50MHz 
-    Info (332119):     7.379               0.000 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     4.645               0.000 clk50MHz 
+    Info (332119):     7.376               0.000 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -151.672
+Info (332146): Worst-case setup slack is -150.411
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):  -151.672          -19158.797 game_clk:norm_clk|out_clk 
-    Info (332119):    -9.522            -283.168 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):     7.982               0.000 clk50MHz 
-Info (332146): Worst-case hold slack is 0.140
+    Info (332119):  -150.411          -19045.599 game_clk:norm_clk|out_clk 
+    Info (332119):    -8.757            -265.180 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     8.215               0.000 clk50MHz 
+Info (332146): Worst-case hold slack is 0.109
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
+    Info (332119):     0.109               0.000 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
     Info (332119):     0.140               0.000 game_clk:norm_clk|out_clk 
-    Info (332119):     0.142               0.000 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
     Info (332119):     0.250               0.000 clk50MHz 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
@@ -649,14 +649,14 @@ Info (332146): Worst-case minimum pulse width slack is -1.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -1.000            -130.000 game_clk:norm_clk|out_clk 
-    Info (332119):     4.330               0.000 clk50MHz 
-    Info (332119):     7.402               0.000 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     4.327               0.000 clk50MHz 
+    Info (332119):     7.403               0.000 disp_clk|altpll_component|auto_generated|pll1|clk[0] 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4854 megabytes
-    Info: Processing ended: Mon Jan 10 00:02:16 2022
-    Info: Elapsed time: 00:00:17
+    Info: Peak virtual memory: 4853 megabytes
+    Info: Processing ended: Sat Jan 15 21:58:10 2022
+    Info: Elapsed time: 00:00:19
     Info: Total CPU time (on all processors): 00:00:27
 
 

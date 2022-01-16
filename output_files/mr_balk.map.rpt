@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mr_balk
-Sun Jan 09 23:49:22 2022
+Sat Jan 15 21:49:22 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -62,7 +62,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jan 09 23:49:22 2022       ;
+; Analysis & Synthesis Status        ; Successful - Sat Jan 15 21:49:22 2022       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; mr_balk                                     ;
 ; Top-level Entity Name              ; mr_balk                                     ;
@@ -251,8 +251,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                                           ;
 ; Total combinational functions               ; 5983                                                                                      ;
 ; Logic element usage by number of LUT inputs ;                                                                                           ;
-;     -- 4 input functions                    ; 3090                                                                                      ;
-;     -- 3 input functions                    ; 2497                                                                                      ;
+;     -- 4 input functions                    ; 3089                                                                                      ;
+;     -- 3 input functions                    ; 2498                                                                                      ;
 ;     -- <=2 input functions                  ; 396                                                                                       ;
 ;                                             ;                                                                                           ;
 ; Logic elements by mode                      ;                                                                                           ;
@@ -273,7 +273,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                                           ;
 ; Maximum fan-out node                        ; sync_clk:disp_clk|altpll:altpll_component|sync_clk_altpll:auto_generated|wire_pll1_clk[0] ;
 ; Maximum fan-out                             ; 221                                                                                       ;
-; Total fan-out                               ; 22950                                                                                     ;
+; Total fan-out                               ; 22949                                                                                     ;
 ; Average fan-out                             ; 3.61                                                                                      ;
 +---------------------------------------------+-------------------------------------------------------------------------------------------+
 
@@ -283,7 +283,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                              ; Entity Name     ; Library Name ;
 +------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |mr_balk                                       ; 5983 (874)          ; 211 (106)                 ; 835584      ; 0          ; 8            ; 0       ; 4         ; 25   ; 0            ; 0          ; |mr_balk                                                                                                                         ; mr_balk         ; work         ;
+; |mr_balk                                       ; 5983 (877)          ; 211 (106)                 ; 835584      ; 0          ; 8            ; 0       ; 4         ; 25   ; 0            ; 0          ; |mr_balk                                                                                                                         ; mr_balk         ; work         ;
 ;    |charac_mem:image_read|                     ; 0 (0)               ; 0 (0)                     ; 49152       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|charac_mem:image_read                                                                                                   ; charac_mem      ; work         ;
 ;       |altsyncram:altsyncram_component|        ; 0 (0)               ; 0 (0)                     ; 49152       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|charac_mem:image_read|altsyncram:altsyncram_component                                                                   ; altsyncram      ; work         ;
 ;          |altsyncram_mor3:auto_generated|      ; 0 (0)               ; 0 (0)                     ; 49152       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|charac_mem:image_read|altsyncram:altsyncram_component|altsyncram_mor3:auto_generated                                    ; altsyncram_mor3 ; work         ;
@@ -310,12 +310,12 @@ https://fpgasoftware.intel.com/eula.
 ;             |mpar_add:sub_par_add|             ; 3 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|lpm_mult:Mult14|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ; mpar_add        ; work         ;
 ;                |lpm_add_sub:adder[0]|          ; 3 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|lpm_mult:Mult14|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ; lpm_add_sub     ; work         ;
 ;                   |add_sub_5vg:auto_generated| ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|lpm_mult:Mult14|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_5vg:auto_generated ; add_sub_5vg     ; work         ;
-;    |navigator:navigator_component|             ; 4885 (4885)         ; 66 (66)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|navigator:navigator_component                                                                                           ; navigator       ; work         ;
-;    |start_mem:start_image_read|                ; 56 (0)              ; 6 (0)                     ; 786432      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|start_mem:start_image_read                                                                                              ; start_mem       ; work         ;
-;       |altsyncram:altsyncram_component|        ; 56 (0)              ; 6 (0)                     ; 786432      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|start_mem:start_image_read|altsyncram:altsyncram_component                                                              ; altsyncram      ; work         ;
-;          |altsyncram_2hs3:auto_generated|      ; 56 (0)              ; 6 (6)                     ; 786432      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|start_mem:start_image_read|altsyncram:altsyncram_component|altsyncram_2hs3:auto_generated                               ; altsyncram_2hs3 ; work         ;
+;    |navigator:navigator_component|             ; 4884 (4884)         ; 66 (66)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|navigator:navigator_component                                                                                           ; navigator       ; work         ;
+;    |start_mem:start_image_read|                ; 54 (0)              ; 6 (0)                     ; 786432      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|start_mem:start_image_read                                                                                              ; start_mem       ; work         ;
+;       |altsyncram:altsyncram_component|        ; 54 (0)              ; 6 (0)                     ; 786432      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|start_mem:start_image_read|altsyncram:altsyncram_component                                                              ; altsyncram      ; work         ;
+;          |altsyncram_2hs3:auto_generated|      ; 54 (0)              ; 6 (6)                     ; 786432      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|start_mem:start_image_read|altsyncram:altsyncram_component|altsyncram_2hs3:auto_generated                               ; altsyncram_2hs3 ; work         ;
 ;             |decode_aj9:rden_decode|           ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|start_mem:start_image_read|altsyncram:altsyncram_component|altsyncram_2hs3:auto_generated|decode_aj9:rden_decode        ; decode_aj9      ; work         ;
-;             |mux_c3b:mux2|                     ; 48 (48)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|start_mem:start_image_read|altsyncram:altsyncram_component|altsyncram_2hs3:auto_generated|mux_c3b:mux2                  ; mux_c3b         ; work         ;
+;             |mux_c3b:mux2|                     ; 46 (46)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|start_mem:start_image_read|altsyncram:altsyncram_component|altsyncram_2hs3:auto_generated|mux_c3b:mux2                  ; mux_c3b         ; work         ;
 ;    |sync_clk:disp_clk|                         ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|sync_clk:disp_clk                                                                                                       ; sync_clk        ; work         ;
 ;       |altpll:altpll_component|                ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|sync_clk:disp_clk|altpll:altpll_component                                                                               ; altpll          ; work         ;
 ;          |sync_clk_altpll:auto_generated|      ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |mr_balk|sync_clk:disp_clk|altpll:altpll_component|sync_clk_altpll:auto_generated                                                ; sync_clk_altpll ; work         ;
@@ -1265,15 +1265,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 16                          ;
 ;         2 data inputs ; 73                          ;
-;         3 data inputs ; 2214                        ;
-;         4 data inputs ; 3090                        ;
+;         3 data inputs ; 2215                        ;
+;         4 data inputs ; 3089                        ;
 ; cycloneiii_mac_mult   ; 4                           ;
 ; cycloneiii_mac_out    ; 4                           ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 108                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 318.10                      ;
-; Average LUT depth     ; 232.12                      ;
+; Average LUT depth     ; 232.08                      ;
 +-----------------------+-----------------------------+
 
 
@@ -1282,7 +1282,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:01:41     ;
+; Top            ; 00:01:44     ;
 +----------------+--------------+
 
 
@@ -1292,7 +1292,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Jan 09 23:47:20 2022
+    Info: Processing started: Sat Jan 15 21:47:15 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mr_balk -c mr_balk
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1589,17 +1589,17 @@ Warning (21074): Design contains 5 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/hp/Documents/Balksavac/mr_balk.vhd Line: 14
     Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/hp/Documents/Balksavac/mr_balk.vhd Line: 14
     Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/hp/Documents/Balksavac/mr_balk.vhd Line: 14
-Info (21057): Implemented 6165 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 6166 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 6023 logic cells
+    Info (21061): Implemented 6024 logic cells
     Info (21064): Implemented 108 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 8 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 28 warnings
-    Info: Peak virtual memory: 4849 megabytes
-    Info: Processing ended: Sun Jan 09 23:49:22 2022
-    Info: Elapsed time: 00:02:02
-    Info: Total CPU time (on all processors): 00:02:24
+    Info: Peak virtual memory: 4848 megabytes
+    Info: Processing ended: Sat Jan 15 21:49:22 2022
+    Info: Elapsed time: 00:02:07
+    Info: Total CPU time (on all processors): 00:02:29
 
 

@@ -1,11 +1,11 @@
-Fitter Status : Successful - Mon Jan 10 00:01:47 2022
+Fitter Status : Successful - Sat Jan 15 21:57:35 2022
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : mr_balk
 Top-level Entity Name : mr_balk
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 5,993 / 49,760 ( 12 % )
+Total logic elements : 5,994 / 49,760 ( 12 % )
     Total combinational functions : 5,984 / 49,760 ( 12 % )
     Dedicated logic registers : 211 / 49,760 ( < 1 % )
 Total registers : 211
